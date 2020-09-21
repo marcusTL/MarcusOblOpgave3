@@ -16,10 +16,17 @@
 </head>
 
 <body>
-  <h1>Hello</h1>
+  <h1>Hello...You</h1>
   <div id="app">
-    <input v-model="name" placeholder="Name">
-    <button v-on:click="sayHello()" class="btn btn-primary">Say hello</button>
+    <input v-model="name" placeholder="Input string">
+    <select v-model="change" name="change">
+      <option>Uppercase</option>
+      <option>Lowercase</option>
+      <option>SayHello</option>
+      <option>FirstWord</option>
+      <option>Fuk</option>
+    </select>
+    <button v-on:click="determin()" class="btn btn-secondary">Change Input</button>
     <div>{{ greeting }}</div>
   </div>
 
